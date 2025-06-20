@@ -22,10 +22,10 @@ os.makedirs('results', exist_ok=True)
 
 
 # Load Dataset
-def load_data(af60b10b8dad38110304.xlsx):
+def load_data(file):
     """Load the dataset from a file"""
-    print(f"Loading data from {af60b10b8dad38110304.xlsx}...")
-    df = pd.read_csv(af60b10b8dad38110304.xlsx)
+    print(f"Loading data from {file}...")
+    df = pd.read_csv(file)
     print(f"Dataset loaded with shape: {df.shape}")
     return df
 
